@@ -1,2 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-end">
+  <% if user_signed_in? %>
+    <%= button_to "logout", destroy_user_session_path, method: :delete  %>
+  <% end %>
 </nav>

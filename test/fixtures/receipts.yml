@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: MyString
+  created_at: MyString
+  supplier_id: 1
+  issued_at: MyString
+  supplier_name: MyString
+  sent_at: MyString
+  planned_delivery: MyString
+  actual_delivery: MyString
+  user: MyString
+  note: MyString
+  state: MyString
+  price_without_vat: 9.99
+  price_with_vat: 9.99
+
+two:
+  number: MyString
+  created_at: MyString
+  supplier_id: 2
+  issued_at: MyString
+  supplier_name: MyString
+  sent_at: MyString
+  planned_delivery: MyString
+  actual_delivery: MyString
+  user: MyString
+  note: MyString
+  state: MyString
+  price_without_vat: 9.99
+  price_with_vat: 9.99

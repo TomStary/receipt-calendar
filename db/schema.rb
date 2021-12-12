@@ -10,7 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_05_104717) do
+ActiveRecord::Schema.define(version: 2021_12_11_195513) do
+
+  create_table "receipts", force: :cascade do |t|
+    t.string "number"
+    t.datetime "created_month"
+    t.integer "supplier_id"
+    t.datetime "issued_at"
+    t.string "supplier_name"
+    t.datetime "sent_at"
+    t.datetime "planned_delivery"
+    t.datetime "actual_delivery"
+    t.string "user"
+    t.string "note"
+    t.string "state"
+    t.decimal "price_without_vat"
+    t.decimal "price_with_vat"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
