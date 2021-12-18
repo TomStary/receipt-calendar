@@ -40,10 +40,8 @@ class ReceiptController < ApplicationController
   def import
     CSV.foreach(params[:file].path, headers: true, header_converters: :map_to_main, col_sep: ';') do |row|
       hashed_row = row.to_hash
-      p hashed_row[:created_month]
-      hashed_row[:created_month] = Date.strptime(hashed_row[:created_month], '%y.%m')
-      p hashed_row
-      # Receipt.create!(hashed_row)
+      hashed_row[:created_month] = Date.strptime(hashed_row[:created_month], '%Y.%m')
+      Receipt.create!(hashed_row)
     end
     redirect_to receipt_calendar_url
   end
