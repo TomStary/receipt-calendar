@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Dobrý den, v rámci předmětu NI-RUB bych chtěl jako semestrální práci vytvořit webovou aplikaci, která by usnadnila plánování příjmu zboží v jedné firmě. Bude se jedna o jednoduchou aplikaci, která na vstupu bude přijímat CSV, které rozparsuje a uloží do DB, následně bude možné měnit jednotlivé hodnoty vytvořených objektů, bude zajištěna přehledná vizualizace a bude možné filtrovat data. Dále také bude možný export dat zpět do csv.
 
-Things you may want to cover:
+Přehled UC:
 
-* Ruby version
+- ~~Možnost načíst nová data z CSV s přesně daným formátem.~~
+- ~~Možnost filtrace objednávek podle kritérií.~~
+- Možnost upravit údaje o objednávce a jejím stavu, možnost přidat poznámku.
+- Zobrazení objednávek na další dny v kalendáři s barevným rozdělením podle stavu.
+- Export dat do csv.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Je tento scope dostatečný pro semestrální práci?
