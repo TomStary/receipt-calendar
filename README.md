@@ -6,8 +6,6 @@ Přehled UC:
 
 - ~~Možnost načíst nová data z CSV s přesně daným formátem.~~
 - ~~Možnost filtrace objednávek podle kritérií.~~
-- Možnost upravit údaje o objednávce a jejím stavu, možnost přidat poznámku.
+- ~~Možnost upravit údaje o objednávce a jejím stavu, možnost přidat poznámku.~~
 - Zobrazení objednávek na další dny v kalendáři s barevným rozdělením podle stavu.
 - Export dat do csv.
-
-Je tento scope dostatečný pro semestrální práci?

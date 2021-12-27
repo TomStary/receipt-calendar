@@ -1,2 +1,27 @@
 <h1>Receipt#edit</h1>
-<p>Find me in app/views/receipt/edit.html.erb</p>
+
+
+<%= form_with(model: @receipt, url: receipt_path(@receipt), method: 'patch') do |form| %>
+  <%= form.label :number, class: "form-label" %>
+  <%= form.text_field :number, class: "form-control" %>
+  <%= form.label :created_month, class: "form-label" %>
+  <%= form.date_field :created_month, class: "form-control" %>
+  <%= form.label :issued_at, class: "form-label" %>
+  <%= form.date_field :issued_at, class: "form-control" %>
+  <%= form.label :supplier_name, class: "form-label" %>
+  <%= form.text_field :supplier_name, class: "form-control" %>
+  <%= form.label :sent_at, class: "form-label" %>
+  <%= form.date_field :sent_at, class: "form-control" %>
+  <%= form.label :planned_delivery, class: "form-label" %>
+  <%= form.date_field :planned_delivery, class: "form-control" %>
+  <%= form.label :actual_delivery, class: "form-label" %>
+  <%= form.date_field :actual_delivery, class: "form-control" %>
+  <%= form.label :user, class: "form-label" %>
+  <%= form.text_field :user, class: "form-control" %>
+  <%= form.label :note, class: "form-label" %>
+  <%= form.text_area :note, size: "80x5", class: "form-control" %>
+  <%= form.label :state, class: "form-label" %>
+  <%= form.select :state, ["rozpracovaná", "připravená", "dokončená"], {}, {class: "form-select"} %>
+  <br>
+  <%= form.submit "Save", class: "btn btn-primary" %>
+<% end %>

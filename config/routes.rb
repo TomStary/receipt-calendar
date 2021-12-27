@@ -4,9 +4,10 @@
 Rails.application.routes.draw do
   get 'receipt/calendar'
   get 'receipt/new'
-  get 'receipt/edit'
   get 'receipt/list'
   post 'receipt/import'
+
+  resources :receipt
 
   devise_for :users, skip: [:registrations]
 

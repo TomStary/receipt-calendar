@@ -29,9 +29,39 @@ end
 
 # This controller handles the receipt management (create, edit, delete and list)
 class ReceiptController < ApplicationController
+  def calendar; end
+
+  def new; end
+
+  def edit
+    @receipt = Receipt.find(params[:id])
+  end
+
+  # rubocop:disable Metrics/MethodLength
+  def update
+    @receipt = Receipt.find(params[:id])
+    if @receipt.update(params.require(:receipt).permit(
+                         :number,
+                         :created_month,
+                         :issued_at,
+                         :supplier_name,
+                         :sent_at,
+                         :planned_delivery,
+                         :actual_delivery,
+                         :user,
+                         :note,
+                         :state
+                       ))
+      redirect_to action: 'list'
+    else
+      edit_receipt_path(receipt)
+    end
+  end
+  # rubocop:enable Metrics/MethodLength
+
   # https://youtu.be/waEC-8GFTP4?t=27
   # rubocop:disable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Metrics/MethodLength
-  def calendar
+  def list
     result = Receipt.all
     result = result.where('number LIKE ?', "%#{params[:number]}%") if params[:number].present?
     result = result.where(issued_at: params[:issued_at]) if params[:issued_at].present?
@@ -45,12 +75,6 @@ class ReceiptController < ApplicationController
     @pagy, @receipts = pagy(result)
   end
   # rubocop:enable Metrics/AbcSize, Metrics/CyclomaticComplexity, Metrics/PerceivedComplexity, Metrics/MethodLength
-
-  def new; end
-
-  def edit; end
-
-  def list; end
 
   def import
     CSV.foreach(params[:file].path, headers: true, header_converters: :map_to_main, col_sep: ';') do |row|
