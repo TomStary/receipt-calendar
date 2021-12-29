@@ -1,31 +1,1521 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  number: MyString
-  created_at: MyString
-  supplier_id: 1
-  issued_at: MyString
-  supplier_name: MyString
-  sent_at: MyString
-  planned_delivery: MyString
-  actual_delivery: MyString
-  user: MyString
-  note: MyString
-  state: MyString
-  price_without_vat: 9.99
-  price_with_vat: 9.99
+receipt_1:
+  id: 1
+  number: NOT213402
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-13 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-13 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-31 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-31 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: dokončená
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:08.624883000 Z
+    zone: *1
+    time: 2021-12-18 14:04:08.624883000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-28 13:56:33.426087000 Z
+    zone: *1
+    time: 2021-12-28 13:56:33.426087000 Z
 
-two:
-  number: MyString
-  created_at: MyString
-  supplier_id: 2
-  issued_at: MyString
-  supplier_name: MyString
-  sent_at: MyString
-  planned_delivery: MyString
-  actual_delivery: MyString
-  user: MyString
-  note: MyString
-  state: MyString
-  price_without_vat: 9.99
-  price_with_vat: 9.99
+receipt_2:
+  id: 2
+  number: NOT213403
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-14 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-14 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-14 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-14 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:08.648729000 Z
+    zone: *1
+    time: 2021-12-18 14:04:08.648729000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:08.648729000 Z
+    zone: *1
+    time: 2021-12-18 14:04:08.648729000 Z
+
+receipt_3:
+  id: 3
+  number: NOT213404
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-13 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-13 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-13 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-13 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:08.677975000 Z
+    zone: *1
+    time: 2021-12-18 14:04:08.677975000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:08.677975000 Z
+    zone: *1
+    time: 2021-12-18 14:04:08.677975000 Z
+
+receipt_4:
+  id: 4
+  number: NOT213405
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-15 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-15 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-15 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-15 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:08.711531000 Z
+    zone: *1
+    time: 2021-12-18 14:04:08.711531000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:08.711531000 Z
+    zone: *1
+    time: 2021-12-18 14:04:08.711531000 Z
+
+receipt_5:
+  id: 5
+  number: NOT213406
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-14 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-14 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-14 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-14 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:08.800791000 Z
+    zone: *1
+    time: 2021-12-18 14:04:08.800791000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:08.800791000 Z
+    zone: *1
+    time: 2021-12-18 14:04:08.800791000 Z
+
+receipt_6:
+  id: 6
+  number: NOT213407
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-15 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-15 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-15 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-15 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:08.843896000 Z
+    zone: *1
+    time: 2021-12-18 14:04:08.843896000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:08.843896000 Z
+    zone: *1
+    time: 2021-12-18 14:04:08.843896000 Z
+
+receipt_7:
+  id: 7
+  number: NOT213408
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-16 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-16 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-16 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-16 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:08.880951000 Z
+    zone: *1
+    time: 2021-12-18 14:04:08.880951000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:08.880951000 Z
+    zone: *1
+    time: 2021-12-18 14:04:08.880951000 Z
+
+receipt_8:
+  id: 8
+  number: NOT213409
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-15 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-15 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-15 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-15 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:08.908824000 Z
+    zone: *1
+    time: 2021-12-18 14:04:08.908824000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:08.908824000 Z
+    zone: *1
+    time: 2021-12-18 14:04:08.908824000 Z
+
+receipt_9:
+  id: 9
+  number: NOT213410
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-16 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-16 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-16 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-16 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:08.929700000 Z
+    zone: *1
+    time: 2021-12-18 14:04:08.929700000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:08.929700000 Z
+    zone: *1
+    time: 2021-12-18 14:04:08.929700000 Z
+
+receipt_10:
+  id: 10
+  number: NOT213411
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-17 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-17 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-17 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-17 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:08.950298000 Z
+    zone: *1
+    time: 2021-12-18 14:04:08.950298000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:08.950298000 Z
+    zone: *1
+    time: 2021-12-18 14:04:08.950298000 Z
+
+receipt_11:
+  id: 11
+  number: NOT213412
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-17 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-17 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-17 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-17 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:08.974142000 Z
+    zone: *1
+    time: 2021-12-18 14:04:08.974142000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:08.974142000 Z
+    zone: *1
+    time: 2021-12-18 14:04:08.974142000 Z
+
+receipt_12:
+  id: 12
+  number: NOT213413
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-17 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-17 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-17 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-17 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:08.995509000 Z
+    zone: *1
+    time: 2021-12-18 14:04:08.995509000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:08.995509000 Z
+    zone: *1
+    time: 2021-12-18 14:04:08.995509000 Z
+
+receipt_13:
+  id: 13
+  number: NOT213414
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-20 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-20 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-20 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-20 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.028227000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.028227000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.028227000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.028227000 Z
+
+receipt_14:
+  id: 14
+  number: NOT213415
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-20 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-20 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-20 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-20 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.050535000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.050535000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.050535000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.050535000 Z
+
+receipt_15:
+  id: 15
+  number: NOT213416
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-20 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-20 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-20 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-20 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.070409000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.070409000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.070409000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.070409000 Z
+
+receipt_16:
+  id: 16
+  number: NOT213417
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-21 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-21 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-21 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-21 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.093047000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.093047000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.093047000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.093047000 Z
+
+receipt_17:
+  id: 17
+  number: NOT213418
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-20 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-20 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-20 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-20 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.112799000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.112799000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.112799000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.112799000 Z
+
+receipt_18:
+  id: 18
+  number: NOT213419
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-22 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-22 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-22 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-22 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.132194000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.132194000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.132194000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.132194000 Z
+
+receipt_19:
+  id: 19
+  number: NOT213420
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-22 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-22 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-22 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-22 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.153897000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.153897000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.153897000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.153897000 Z
+
+receipt_20:
+  id: 20
+  number: NOT213421
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-23 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-23 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-23 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-23 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.177730000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.177730000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.177730000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.177730000 Z
+
+receipt_21:
+  id: 21
+  number: NOT213422
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-23 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-23 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-23 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-23 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.201345000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.201345000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.201345000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.201345000 Z
+
+receipt_22:
+  id: 22
+  number: NOT213423
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-06 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-06 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-06 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-06 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.222245000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.222245000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.222245000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.222245000 Z
+
+receipt_23:
+  id: 23
+  number: NOT213424
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-07 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-07 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-07 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-07 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.241253000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.241253000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.241253000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.241253000 Z
+
+receipt_24:
+  id: 24
+  number: NOT213425
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-20 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-20 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-20 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-20 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.261252000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.261252000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.261252000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.261252000 Z
+
+receipt_25:
+  id: 25
+  number: NOT213426
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-13 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-13 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-13 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-13 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.283173000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.283173000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.283173000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.283173000 Z
+
+receipt_26:
+  id: 26
+  number: NOT213427
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-14 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-14 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-14 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-14 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.305161000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.305161000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.305161000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.305161000 Z
+
+receipt_27:
+  id: 27
+  number: NOT213428
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-15 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-15 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-15 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-15 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.327834000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.327834000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.327834000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.327834000 Z
+
+receipt_28:
+  id: 28
+  number: NOT213429
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-21 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-21 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-21 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-21 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.357473000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.357473000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.357473000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.357473000 Z
+
+receipt_29:
+  id: 29
+  number: NOT213430
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-15 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-15 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-15 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-15 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.387439000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.387439000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.387439000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.387439000 Z
+
+receipt_30:
+  id: 30
+  number: NOT213431
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-17 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-17 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-17 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-17 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.421524000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.421524000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.421524000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.421524000 Z
+
+receipt_31:
+  id: 31
+  number: NOT213432
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-20 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-20 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-20 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-20 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.449233000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.449233000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.449233000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.449233000 Z
+
+receipt_32:
+  id: 32
+  number: NOT213433
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-23 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-23 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-23 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-23 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.472067000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.472067000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.472067000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.472067000 Z
+
+receipt_33:
+  id: 33
+  number: NOT213434
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-20 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-20 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-20 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-20 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.496198000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.496198000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.496198000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.496198000 Z
+
+receipt_34:
+  id: 34
+  number: NOT213435
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-21 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-21 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-21 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-21 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.525170000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.525170000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.525170000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.525170000 Z
+
+receipt_35:
+  id: 35
+  number: NOT213436
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-14 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-14 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-14 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-14 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.549970000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.549970000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.549970000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.549970000 Z
+
+receipt_36:
+  id: 36
+  number: NOT213437
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-16 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-16 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-16 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-16 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.571201000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.571201000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.571201000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.571201000 Z
+
+receipt_37:
+  id: 37
+  number: NOT213438
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-20 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-20 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-20 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-20 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.593007000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.593007000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.593007000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.593007000 Z
+
+receipt_38:
+  id: 38
+  number: NOT213439
+  created_month: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-01 00:00:00.000000000 Z
+    zone: !ruby/object:ActiveSupport::TimeZone &1
+      name: Etc/UTC
+    time: 2021-11-01 00:00:00.000000000 Z
+  supplier_id: 211
+  issued_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  supplier_name: dodavatel
+  sent_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-11-30 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-11-30 00:00:00.000000000 Z
+  planned_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-20 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-20 00:00:00.000000000 Z
+  actual_delivery: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-20 00:00:00.000000000 Z
+    zone: *1
+    time: 2021-12-20 00:00:00.000000000 Z
+  user: natsta001
+  note: Nákupní objednávka tuzemská
+  state: rozpracovaná
+  price_without_vat: !ruby/object:BigDecimal 27:0.0
+  price_with_vat: !ruby/object:BigDecimal 27:0.0
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.612921000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.612921000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2021-12-18 14:04:09.612921000 Z
+    zone: *1
+    time: 2021-12-18 14:04:09.612921000 Z

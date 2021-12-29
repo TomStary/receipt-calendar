@@ -1,23 +1,33 @@
-require "test_helper"
+require 'test_helper'
 
 class ReceiptControllerTest < ActionDispatch::IntegrationTest
-  test "should get calendar" do
+  include Devise::Test::IntegrationHelpers
+
+  test 'should get calendar' do
+    sign_in users(:test)
+
     get receipt_calendar_url
     assert_response :success
   end
 
-  test "should get new" do
-    get receipt_new_url
-    assert_response :success
+  test 'should upload file' do
+    sign_in users(:test)
+    post receipt_import_url, params: { file: fixture_file_upload('receipts.csv', 'text/csv') }
+
+    assert_response :redirect
   end
 
-  test "should get edit" do
-    get receipt_edit_url
-    assert_response :success
-  end
+  test 'should get list' do
+    sign_in users(:test)
 
-  test "should get list" do
     get receipt_list_url
+    assert_response :success
+  end
+
+  test 'should get exported file' do
+    sign_in users(:test)
+    get receipt_export_path
+
     assert_response :success
   end
 end

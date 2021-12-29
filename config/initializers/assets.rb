@@ -12,3 +12,14 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
+
+# helper to create fixtures
+class ActiveRecord::Base
+  def dump_fixture
+    fixture_file = "#{Rails.root}/test/fixtures/#{self.class.table_name}.yml"
+    File.open(fixture_file, 'a+') do |f|
+      f.puts({ "#{self.class.table_name.singularize}_#{id}" => attributes }
+        .to_yaml.sub!(/---\s?/, "\n"))
+    end
+  end
+end

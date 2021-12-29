@@ -37,7 +37,7 @@
 
 # Calendar extra: Add pagination filtering by calendar time unit (year, quarter, month, week, day)
 # See https://ddnexus.github.io/pagy/extras/calendar
-# require 'pagy/extras/calendar'
+require 'pagy/extras/calendar'
 # Default for each unit
 # Pagy::Calendar::Year::DEFAULT[:order]     = :asc        # Time direction of pagination
 # Pagy::Calendar::Year::DEFAULT[:format]    = '%Y'        # strftime format
@@ -50,7 +50,7 @@
 #
 # Pagy::Calendar::Week::DEFAULT[:order]     = :asc        # Time direction of pagination
 # Pagy::Calendar::Week::DEFAULT[:format]    = '%Y-%W'     # strftime format
-# Pagy::Calendar::Week::DEFAULT[:offset]    = 0           # Day offset from Sunday (0: Sunday; 1: Monday;... 6: Saturday)
+Pagy::Calendar::Week::DEFAULT[:offset] = 1 # Day offset from Sunday (0: Sunday; 1: Monday;... 6: Saturday)
 #
 # Pagy::Calendar::Day::DEFAULT[:order]      = :asc        # Time direction of pagination
 # Pagy::Calendar::Day::DEFAULT[:format]     = '%Y-%m-%d'  # strftime format

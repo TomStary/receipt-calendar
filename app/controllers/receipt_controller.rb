@@ -27,14 +27,35 @@ CSV::HeaderConverters[:map_to_main] = lambda do |header|
   end
 end
 
+CSV::HeaderConverters[:map_to_header] = lambda do |header|
+  CSV_HEADERS.key(header)
+end
+
 # This controller handles the receipt management (create, edit, delete and list)
 class ReceiptController < ApplicationController
-  def calendar; end
-
-  def new; end
-
   def edit
     @receipt = Receipt.find(params[:id])
+  end
+
+  # This method must be implemented by the application.
+  # It must return the starting and ending local Time objects array defining the calendar :period
+  def pagy_calendar_period(collection)
+    collection.map(&:actual_delivery).minmax.map(&:getlocal)
+  end
+
+  # This method must be implemented by the application.
+  # It receives the main collection and must return a filtered version of it.
+  # The filter logic must be equivalent to {storage_time >= from && storage_time < to}
+  def pagy_calendar_filter(collection, from, to)
+    collection.where('actual_delivery BETWEEN ? AND ?', from.utc, to.utc) # storage in UTC
+  end
+
+  def calendar
+    @calendar, @pagy, @records = pagy_calendar(Receipt.all, year: { size: [1, 1, 1, 1] },
+                                                            month: { size: [0, 12, 12, 0], format: '%b' },
+                                                            day: { size: [0, 31, 31, 0], format: '%d' },
+                                                            pagy: { items: 10 },
+                                                            active: !params[:skip])
   end
 
   # rubocop:disable Metrics/MethodLength
@@ -83,5 +104,20 @@ class ReceiptController < ApplicationController
       Receipt.create!(hashed_row)
     end
     redirect_to receipt_calendar_url
+  end
+
+  def export
+    send_data(generate_csv, filename: 'receipts.csv', format: 'csv')
+  end
+
+  private
+
+  def generate_csv
+    CSV.generate(headers: true, header_converters: :map_to_header, col_sep: ';') do |csv|
+      csv << CSV_HEADERS.values
+      Receipt.all.each do |receipt|
+        csv << CSV_HEADERS.keys.map { |key| receipt.send(key) }
+      end
+    end
   end
 end

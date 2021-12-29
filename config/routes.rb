@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'receipt/new'
   get 'receipt/list'
   post 'receipt/import'
+  get 'receipt/export'
 
   resources :receipt
 

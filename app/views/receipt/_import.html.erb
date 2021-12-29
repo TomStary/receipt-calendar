@@ -1,0 +1,8 @@
+<div class="d-flex justify-content-center">
+  <%= form_tag({:action => :import}, multipart: true) do %>
+    <%= file_field_tag :file %>
+    <%= submit_tag( "Import" )%>
+  <% end %>
+
+  <%= link_to 'Export CSV', receipt_export_path, { :class => "btn btn-link" }  %>
+</div>
