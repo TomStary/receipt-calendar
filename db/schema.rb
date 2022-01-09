@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2021_12_11_195513) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "receipts", force: :cascade do |t|
     t.string "number"
     t.datetime "created_month"

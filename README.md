@@ -1,11 +1,15 @@
-# README
+# How to run application
 
-Dobrý den, v rámci předmětu NI-RUB bych chtěl jako semestrální práci vytvořit webovou aplikaci, která by usnadnila plánování příjmu zboží v jedné firmě. Bude se jedna o jednoduchou aplikaci, která na vstupu bude přijímat CSV, které rozparsuje a uloží do DB, následně bude možné měnit jednotlivé hodnoty vytvořených objektů, bude zajištěna přehledná vizualizace a bude možné filtrovat data. Dále také bude možný export dat zpět do csv.
+First, you need to install docker and docker compose. After that its couple of steps to run application.
 
-Přehled UC:
+In root folder of this repository, run this command `docker-compose up` to start application.
 
-- ~~Možnost načíst nová data z CSV s přesně daným formátem.~~
-- ~~Možnost filtrace objednávek podle kritérií.~~
-- ~~Možnost upravit údaje o objednávce a jejím stavu, možnost přidat poznámku.~~
-- Zobrazení objednávek na další dny v kalendáři s barevným rozdělením podle stavu.
-- Export dat do csv.
+Before first request there needs to be executed two more actions, in second terminal in the same folder run this commands:
+- `docker-compose run web rake db:create`
+- `docker compose run web rake db:seed`
+
+And that's all folks!
+
+## Tests
+
+For local testing, there is test file in fixtures folder `test/fixtures/files/receipts.csv`.

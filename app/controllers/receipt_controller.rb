@@ -40,6 +40,8 @@ class ReceiptController < ApplicationController
   # This method must be implemented by the application.
   # It must return the starting and ending local Time objects array defining the calendar :period
   def pagy_calendar_period(collection)
+    return [DateTime.now.getlocal, DateTime.now.getlocal] if collection.empty?
+
     collection.map(&:actual_delivery).minmax.map(&:getlocal)
   end
 
